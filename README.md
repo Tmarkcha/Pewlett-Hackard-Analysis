@@ -10,7 +10,7 @@ The second half of this analysis is to figure out which positions need filling a
 
 ## Results
 -	The number of retiring employees, by title, are as follows:
---	25,916 Senior Engineers
+  - 25,916 Senior Engineers
 --	24,926 Senior Staff
 --	9,285 Engineers
 --	7,636 Staff
