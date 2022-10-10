@@ -49,6 +49,9 @@ We can also figure out what the ratio is of available mentors to the current wor
 ![mentor_employee_ratios_byTitle](https://user-images.githubusercontent.com/111096246/194954937-12e1b084-084e-4f82-8f97-1c255e5ffe50.PNG)
 
 If the mentors were to teach their own to help them succeed even further, the senior engineers would have the most trouble, as there are too many future senior engineers for the mentors to teach. It would be advised that this potential opportunity be brought to the senior engineers with least experience, as there would be senior engineers who have done their tasks and duties for a longer period and do not believe they need much mentoring at that stage of their careers.
+
 The positions of Senior Staff, Staff, and Technique Leaders have similar ratios, and are more feasible to conduct. Where, for example, one mentor can have approximately 20 different students each day. In an average five-day work week, a single mentor could cover all their potential students.
+
 Moreover, the positions of Engineer and Assistant Engineers have more reasonable numbers to conduct this sort of operation where one mentor could have less than a dozen students per day in an average five-day work week.
+
 Unfortunately, the next generation of managers are out of luck, as there are no mentorship eligible managers to aid them.
