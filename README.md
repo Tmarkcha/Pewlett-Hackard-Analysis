@@ -28,19 +28,7 @@ The second half of this analysis is to figure out which positions need filling a
 
 With the criteria of employees being born in 1956, the query proves that 72,458 current employees are capable of retiring. Most of these roles are at the senior level, understandably, and are the prime title for current employees to fill in for. By running the following query:
 
-SELECT DISTINCT ON (e.emp_no) e.emp_no,/n
-e.first_name,
-e.last_name,
-e.birth_date,
-ti.title,
-ti.to_date
---INTO unique_employees
-FROM employees AS e
-JOIN titles AS ti
-ON e.emp_no = ti.emp_no
-WHERE to_date = '9999-01-01'
---	AND birth_date > '1955-12-31'
-ORDER BY e.emp_no, to_date DESC;
+![future_employees](https://user-images.githubusercontent.com/111096246/194955542-28bab367-d259-4086-84f5-643326f41c56.PNG)
 
 We get a total result of 240,124 entries. This means that there are currently 240,124 employees at all levels of hierarchy and in different stages in life. By removing the ‘- -’ at the second last line of the query we get 167,666 entries. This means that there are 167,666 employees who are not quite ready to retire and will be called upon to fill in the void. The difference between the two values is the same as the number of employees capable of retiring.  
 
@@ -48,21 +36,9 @@ We get a total result of 240,124 entries. This means that there are currently 24
 
 With the total number of potential retirees being 72,458 and the number of those qualified for the mentorship program being 1,549, that puts the ratio of mentors to jobs that need filling at 1:47. Having an approximated 47 students per mentor is a rather large number of students, so the proposed method of teaching would be a seminar. However, as these mentors would reduce their work capacity to a part-time status, that would leave them more time to interact more closely with everyone looking to improve and thrive at Pewlett Hackard.
 
-The following query allows us to get the count, per title, of the next generation of employees:
+The following query allows us to get the count, per title, of the next generation of employees and available mentors:
 
-SELECT COUNT("title") AS "Count", "title"
---INTO future_titles
-FROM unique_employees
-GROUP BY "title"
-ORDER BY COUNT("title") DESC;
-
-The output of the previous query is similar to this next query, which gives the count, per title, of available mentors:
-
-SELECT COUNT("title") AS "Count", "title"
-INTO mentorship_count
-FROM mentorship_eligibility
-GROUP BY "title"
-ORDER BY COUNT("title") DESC;
+![employee_mentor_counts_byTitle](https://user-images.githubusercontent.com/111096246/194955926-cee36a75-7bdd-4963-a109-1e65ed3dcde8.PNG)
 
 If one compares the number of mentors, by title, to the number of current employees, by title as well, one can conclude the following:
 
