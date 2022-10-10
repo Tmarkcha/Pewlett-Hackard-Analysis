@@ -9,14 +9,15 @@ To start solving the first objective, who is eligible for the mentorship program
 The second half of this analysis is to figure out which positions need filling after a generation of employees begin to retire. This is another multi-step process that involves multiple queries to achieve the end result. Firstly, several columns from the ‘employees’ and ‘titles’ dataset are selected and joined by utilizing their shared column (employee number). The data is then filtered by dates for the date of birth (between 1952-01-01 and 1955-12-31). Secondly, the issue that presents itself in this newly formed dataset is that there are duplicates employees, due to promotions. This is solved by filtering out to the same “to_date” from before, as previous roles would have a different “to_date” than their current role. Finally, a new dataset is formed with the last filter, and with that the number of times each job title is counted and compiled into a final dataset that displays the total number of retirees by job title.
 
 ## Results
--	The number of retiring employees, by title, are as follows:
- - 25,916 Senior Engineers
---	24,926 Senior Staff
---	9,285 Engineers
---	7,636 Staff
---	3,603 Technique Leaders
---	1,090 Assistant Engineers
---	2 Managers
+
+- The number of retiring employees, by title, are as follows:
+  - 25,916 Senior Engineers
+  - 24,926 Senior Staff
+  - 9,285 Engineers
+  - 7,636 Staff
+  - 3,603 Technique Leaders
+  - 1,090 Assistant Engineers
+  - 2 Managers
 -	Total of 72,458 jobs consist of current employees who will soon be retiring.
 -	Total of 1,549 current employees are eligible for the mentorship program.
 -	0.02% of potential retirees are eligible for the mentorship program
