@@ -28,7 +28,7 @@ The second half of this analysis is to figure out which positions need filling a
 
 With the criteria of employees being born in 1956, the query proves that 72,458 current employees are capable of retiring. Most of these roles are at the senior level, understandably, and are the prime title for current employees to fill in for. By running the following query:
 
-SELECT DISTINCT ON (e.emp_no) e.emp_no,
+SELECT DISTINCT ON (e.emp_no) e.emp_no,/n
 e.first_name,
 e.last_name,
 e.birth_date,
